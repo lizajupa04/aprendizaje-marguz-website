@@ -1,0 +1,129 @@
+* {
+  padding: none;
+  margin: none;
+}
+
+.logomarguz {
+  width: 120px;
+  margin-left: 20px;
+}
+
+.links {
+  margin-right: 30px;
+}
+
+.titulo {
+  background: linear-gradient(
+    252deg,
+    #d94343 14.95%,
+    rgba(40, 10, 10, 0.44) 106.24%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+.seccion-hero {
+  margin-top: 100px;
+}
+
+.btn-aprendizaje {
+  color: white;
+  width: 150px;
+  height: 50px;
+  margin-top: 40px;
+  margin-left: 80px;
+  border: none;
+  border-radius: 10px;
+  background: #db1f27;
+}
+
+.titulo-niveles {
+  font-size: 50px;
+  font-weight: bold;
+  color: #474747;
+}
+
+.link-cuadronivel01 {
+  text-decoration: none;
+}
+
+.seccion-titulo-niveles {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.seccion-niveles {
+  margin-top: 80px;
+}
+
+.nivel01-cuadro {
+  display: flex;
+  background: linear-gradient(
+    93deg,
+    #db1f27 32.22%,
+    rgba(219, 31, 39, 0) 101.83%
+  );
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(49, 48, 48, 0.25);
+  margin: 0px 80px 30px 80px;
+  height: 95px;
+}
+
+.A1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin-top: 8px;
+  margin-left: 40px;
+}
+
+.Beginner {
+  font-size: 25px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.img-a1 {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.img-a2 {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.img-a3 {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.pie-pagina {
+  background: #474747;
+  border: none;
+  height: 50px;
+  margin-top: 60px;
+}
+
+.descripcion-piepagina {
+  color: rgb(184, 182, 182);
+  font-size: 20px;
+  padding-top: 10px;
+  margin-right: 30px;
+  text-align: end;
+}
+
+.carrusel {
+  width: 60%;
+}
