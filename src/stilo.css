@@ -41,72 +41,43 @@
   background: #db1f27;
 }
 
-.titulo-niveles {
-  font-size: 50px;
-  font-weight: bold;
-  color: #474747;
-}
-
-.link-cuadronivel01 {
-  text-decoration: none;
-}
-
-.seccion-titulo-niveles {
-  margin-top: 120px;
+.contenedor.niveles {
+  display: block;
   text-align: center;
+  margin: 70px 100px 60px 100px;
+  padding: 20px;
+  border: 2px solid red;
 }
 
-.seccion-niveles {
-  margin-top: 80px;
+.niveles {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 90px 0px 90px;
 }
 
-.nivel01-cuadro {
-  display: flex;
+.a1 {
   background: linear-gradient(
     93deg,
     #db1f27 32.22%,
-    rgba(219, 31, 39, 0) 101.83%
+    rgba(219, 31, 41, 0.521) 101.83%
   );
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(49, 48, 48, 0.25);
-  margin: 0px 80px 30px 80px;
-  height: 95px;
-}
-
-.A1 {
-  font-size: 50px;
+  margin: 20px 90px;
+  padding: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
   font-weight: bold;
-  color: white;
-  margin-top: 8px;
-  margin-left: 40px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
 }
 
-.Beginner {
-  font-size: 25px;
-  color: white;
-  margin-top: 30px;
-  margin-left: 20px;
-}
-
-.img-a1 {
-  width: 70px;
-  height: 70px;
-  margin-top: 10px;
-  margin-left: 60px;
-}
-
-.img-a2 {
-  width: 70px;
-  height: 70px;
-  margin-top: 10px;
-  margin-left: 30px;
-}
-
-.img-a3 {
-  width: 70px;
-  height: 70px;
-  margin-top: 10px;
-  margin-left: 70px;
+.a1:hover {
+  background: #2c2c2c;
+  box-shadow: 4px 4px 4px gray;
+  transition: all 0.3s ease-in;
+  transform: translateY(-5px);
 }
 
 .pie-pagina {
@@ -122,8 +93,4 @@
   padding-top: 10px;
   margin-right: 30px;
   text-align: end;
-}
-
-.carrusel {
-  width: 60%;
 }
