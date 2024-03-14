@@ -1,0 +1,103 @@
+* {
+  padding: none;
+  margin: none;
+}
+
+:root {
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.logomarguz {
+  width: 120px;
+  margin-left: 20px;
+}
+
+.links {
+  margin-right: 30px;
+}
+
+/*------CONTENEDOR GLOBAL------
+--------------------------------*/
+.contenedor {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+/*------PANEL IZQUIERDO---------
+--------------------------------*/
+.panel-izquierdo {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  display: block;
+  background: rgba(201, 201, 201, 0.425);
+  border: 1px solid #474747;
+  overflow: auto;
+}
+
+.titulo-A1 {
+  background: #db1f27;
+  text-align: center;
+  color: aliceblue;
+  padding: 10px 0px;
+}
+
+.links-nivel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  z-index: 1;
+}
+
+.item {
+  position: relative;
+  text-decoration: none;
+  color: #474747;
+  padding: 10px 40px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.item::before {
+  content: "";
+  display: block;
+  background: pink;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  clip-path: var(--clippy);
+  transition: clip-path 0.5s;
+}
+
+.item:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/*------CONTENIDO---------------
+--------------------------------*/
+.contenedor {
+  display: flex;
+  border: 2px solid red;
+  margin: 40px 0px 0px 250px;
+}
+
+.presentacion-saludos {
+  padding: 20px 150px;
+  border: 2px solid rgb(0, 255, 115);
+}
+
+.carrusel {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.carrusel img {
+  border-radius: 10px;
+}

@@ -41,12 +41,19 @@
   background: #db1f27;
 }
 
-.contenedor.niveles {
+/**/
+.contenedor-niveles {
   display: block;
+  justify-content: center;
   text-align: center;
-  margin: 70px 100px 60px 100px;
-  padding: 20px;
+  margin: 100px 0px 0px 0px;
   border: 2px solid red;
+}
+
+.titulo-niveles h1 {
+  color: #474747;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 .niveles {
