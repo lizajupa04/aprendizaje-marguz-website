@@ -87,6 +87,54 @@
   transform: translateY(-5px);
 }
 
+/*------ MODAL --------------------
+-----------------------------------*/
+#modal1,
+#modal2,
+#modal3,
+#modal4,
+#modal5 {
+  background: none;
+  text-align: center;
+  margin-top: 50px;
+  border: none;
+  border-radius: none;
+  overflow: hidden;
+}
+
+#modal1::backdrop,
+#modal2::backdrop,
+#modal3::backdrop,
+#modal4::backdrop,
+#modal5::backdrop {
+  background: rgba(0, 0, 0, 0.801);
+}
+
+.boton-close {
+  text-align: end;
+  border: none;
+}
+
+.boton-close button {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  background: black;
+  color: #d9d9d9;
+  font-weight: bold;
+  outline-style: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 0px 10px 0px 10px;
+}
+
+.imagen-modal img {
+  width: 90%;
+  border-radius: 10px 10px;
+}
+
+/*------ MFOOTER --------------------
+-----------------------------------*/
 .pie-pagina {
   background: #474747;
   border: none;
