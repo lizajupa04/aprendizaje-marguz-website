@@ -10,6 +10,7 @@
   --primary-color: #db1f37;
   --second-color: #e7fdfe;
   --third-color: #fec3c381;
+  --cuarto-color: #474747;
   --color-letra1: #ffff;
   --color-letra2: #474747;
   --border-radius: 10px;
@@ -136,7 +137,7 @@
 }
 
 .footer-panel {
-  background: var(--color-letra2);
+  background: var(--cuarto-color);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -159,7 +160,7 @@
 .header-saludos {
   display: grid;
   grid-template-columns: 20% 80%;
-  border: var(--borde);
+  border: none;
   padding: 15px 20px 15px 20px;
 }
 
@@ -173,7 +174,7 @@
   font-family: var(--letra-normal);
   font-size: 20px;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--color-letra2);
   font-weight: 600;
 }
 
@@ -198,6 +199,7 @@
 
 .caption-presentacion p {
   font-family: var(--letra-normal);
+  font-size: 16px;
   display: flex;
   text-align: center;
   padding: 10px 50px;
@@ -205,16 +207,28 @@
 }
 
 .boton-down {
+  margin: 0px 220px;
   text-align: center;
 }
 
-.boton-down button {
-  background: var(--color-letra2);
+.boton-down a {
+  background: var(--cuarto-color);
   font-family: var(--letra-normal);
-  border: none;
-  border-radius: 20px;
-  padding: 5px 20px;
+  font-size: 14px;
+  text-decoration: none;
   color: var(--color-letra1);
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.2s ease-in;
+}
+
+.boton-down:hover a {
+  background: var(--third-color);
+  color: var(--color-letra2);
+  font-weight: 400;
+  box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.596);
+  transition: all 0.2s ease-in;
 }
 
 .seccion-titulos {
@@ -292,7 +306,7 @@
 .acordeon-item {
   background-color: #d4d4d450;
   color: #474747;
-  margin: 30px 90px;
+  margin: 30px 130px;
   border: var(--primary-color);
   border-radius: 10px;
 }
@@ -304,6 +318,7 @@
   padding: 10px 20px;
   border: 1px solid #db1f27;
   border-radius: 10px;
+  height: 70px;
 }
 
 .acordeon-item-header::after {
@@ -320,11 +335,12 @@
 .acordeon-item-header h3 {
   font-family: var(--letra-titulo);
   color: var(--primary-color);
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .acordeon-item-header p {
   font-family: var(--letra-normal);
+  font-size: 14px;
 }
 
 .acordeon-item-body {
@@ -341,6 +357,23 @@
 .acordeon-item-body-content {
   font-family: var(--letra-normal);
   justify-content: center;
+  text-align: center;
   padding: 20px;
   line-height: 1.5rem;
+}
+
+.acordeon-item-body-content a {
+  background: var(--primary-color);
+  font-family: var(--letra-normal);
+  color: var(--color-letra1);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0px 100px;
+}
+
+.acordeon-item-body-content img {
+  width: 80%;
 }
