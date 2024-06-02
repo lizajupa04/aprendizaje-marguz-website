@@ -65,6 +65,7 @@
   background: var(--second-color);
 }
 
+/*Seccion título*/
 .titulo-A1 {
   font-family: var(--letra-titulo);
   background: var(--primary-color);
@@ -73,6 +74,7 @@
   padding: 10px 0px;
 }
 
+/*Lista de temas*/
 .links-nivel {
   position: relative;
   display: flex;
@@ -121,7 +123,6 @@
   text-align: center;
   padding: 20px 30px;
   border: 1px solid red;
-  height: 33%;
 }
 
 .btn-1 {
@@ -138,19 +139,25 @@
 
 .footer-panel {
   background: var(--cuarto-color);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .footer-panel p {
   font-family: var(--letra-titulo);
   color: var(--color-letra1);
   font-weight: 300;
+  border: var(--borde);
 }
 /*------CONTENIDO---------------
 --------------------------------*/
+.logomarguz {
+  width: 120px;
+  margin-left: 20px;
+}
+
+.links {
+  margin-right: 30px;
+}
 .contenedor {
   display: flex;
   /*border: 2px solid red;*/
@@ -185,7 +192,11 @@
 
 .presentacion-general1,
 .presentacion-general2 {
-  padding: 20px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 130px;
 }
 
 .slide {
@@ -197,18 +208,22 @@
   border-radius: 10px;
 }
 
+.caption-presentacion {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 10px;
+}
+
 .caption-presentacion p {
   font-family: var(--letra-normal);
   font-size: 16px;
-  display: flex;
-  text-align: center;
-  padding: 10px 50px;
   color: var(--color-letra2);
 }
 
 .boton-down {
-  margin: 0px 220px;
   text-align: center;
+  margin: 0px 220px;
 }
 
 .boton-down a {
@@ -255,8 +270,9 @@
   column-gap: 40px;
   justify-content: center;
   text-align: center;
-  margin: 0px 150px;
-  padding: 30px;
+
+  padding: 30px 150px;
+  border: var(--borde);
 }
 
 .videos {
@@ -376,4 +392,42 @@
 
 .acordeon-item-body-content img {
   width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  .panel-izquierdo {
+    display: none;
+  }
+
+  .contenedor {
+    display: flex;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .presentacion-general1,
+  .presentacion-general2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px 40px;
+  }
+
+  .seccion-videos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 0px 150px;
+    border: var(--borde);
+  }
+
+  .videos {
+    border: 1px solid #c5c5c5;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease-out;
+  }
 }

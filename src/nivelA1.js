@@ -40,3 +40,38 @@ const carousel2 = new bootstrap.Carousel(myCarouselElement2, {
   interval: 2000,
   touch: false,
 });
+
+const myCarouselElement3 = document.querySelector("#myCarousel3");
+
+const carousel3 = new bootstrap.Carousel(myCarouselElement3, {
+  interval: 2000,
+  touch: false,
+});
+
+const myCarouselElement4 = document.querySelector("#myCarousel4");
+
+const carousel4 = new bootstrap.Carousel(myCarouselElement4, {
+  interval: 2000,
+  touch: false,
+});
+
+const myCarouselElement5 = document.querySelector("#myCarousel5");
+
+const carousel5 = new bootstrap.Carousel(myCarouselElement5, {
+  interval: 2000,
+  touch: false,
+});
+
+const myCarouselElement6 = document.querySelector("#myCarousel6");
+
+const carousel6 = new bootstrap.Carousel(myCarouselElement6, {
+  interval: 2000,
+  touch: false,
+});
+
+const myCarouselElement7 = document.querySelector("#myCarousel7");
+
+const carousel7 = new bootstrap.Carousel(myCarouselElement7, {
+  interval: 2000,
+  touch: false,
+});
