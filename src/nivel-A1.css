@@ -42,13 +42,14 @@
   display: none;
 }
 
-/*---CONTENEDOR TOTAL ---------------
+/*--- SECCION CONTENEDOR TOTAL ------
 -------------------------------------*/
 .contenedor-principal {
   display: flex;
 }
 
-/*--- Panel Izquierdo estático ----*/
+/*--- SECCION PANEL IZQUIERDO ---
+---------------------------------*/
 .panel-izquierdo {
   background: #f0f0f0;
   display: flex;
@@ -81,7 +82,7 @@
   text-align: start;
   z-index: 1;
   overflow: auto;
-  height: 250px;
+  height: 230px;
   border-bottom: 1px solid #9e9e9e59;
 }
 
@@ -114,10 +115,61 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/*--- Panel derecho ----*/
+.botones-panel {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.btn-1 {
+  background: var(--primary-color);
+  font-family: var(--letra-normal);
+  color: var(--color-letra1);
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 6px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  transition: all 0.1s ease-in;
+}
+
+.btn-1:hover {
+  background: var(--cuarto-color);
+  color: var(--color-letra1);
+  font-weight: 400;
+  box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.596), -1px -1px 2px white;
+  transition: all 0.1s ease-in;
+}
+
+.footer-panel {
+  background: var(--cuarto-color);
+  padding: 8px 0px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-panel p {
+  font-family: var(--letra-titulo);
+  color: var(--color-letra1);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*--- SECCION PANEL DERECHO -----
+---------------------------------*/
 .contenedor-contenido {
   display: block;
   margin: 60px 0px 0px 250px;
+}
+
+.tit-saludosSeparacion {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px 0px;
+  color: white;
+  pointer-events: none;
 }
 
 /*--- contenedor de diapositivas ----*/
@@ -183,8 +235,7 @@
   display: block;
   justify-content: center;
   text-align: start;
-  padding: 50px 0px 0px 0px;
-  border: var(--borde);
+  padding: 10px 0px 0px 0px;
 }
 
 .seccion-titulos h1 {
@@ -208,7 +259,6 @@
   justify-content: center;
   text-align: center;
   padding: 10px 170px;
-  border: var(--borde);
 }
 
 .videos {
@@ -246,11 +296,11 @@
   font-size: 14px;
 }
 
+/*--- Acordeon  ---------*/
 .acordeon {
   width: 100%;
   max-width: 1000px;
   margin-bottom: 70px;
-  border: 1px solid green;
 }
 
 .acordeon-item {
@@ -316,7 +366,7 @@
   background: var(--primary-color);
   font-family: var(--letra-normal);
   color: var(--color-letra1);
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
   padding: 5px 20px;
   text-decoration: none;
@@ -327,7 +377,15 @@
 .acordeon-item-body-content img {
   width: 80%;
 }
-@media screen and (max-width: 800px) {
+
+.acordeon-item-body-content P {
+  font-size: 14px;
+}
+
+/*--- RESPONSIVE 600PX ---------
+---------------------------------
+---------------------------------*/
+@media screen and (max-width: 600px) {
   /*--Barra de navegación --*/
   .logomarguz {
     width: 120px;
@@ -356,9 +414,15 @@
   .contenedor-contenido {
     margin: 60px 0px 0px 0px;
   }
+
+  .tit-saludosSeparacion {
+    padding: 0px 0px;
+    font-size: 20px;
+  }
+
   /*--SECCIÓN DIAPOSITIVAS --*/
   .presentacion-general {
-    padding: 20px 40px;
+    padding: 10px 40px;
   }
 
   .caption-presentacion p {
@@ -367,7 +431,7 @@
 
   .boton-down {
     text-align: center;
-    margin: 10px 20px;
+    margin: 20px 20px;
   }
 
   .boton-down a {
@@ -380,7 +444,7 @@
     display: block;
     justify-content: center;
     text-align: start;
-    padding: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
   }
 
   .seccion-titulos h1 {
@@ -397,7 +461,7 @@
 
   /*--SECCION VIDEOS ------*/
   .videos-explicaciones {
-    padding: 20px 0px;
+    padding: 10px 0px;
   }
 
   .seccion-videos {
@@ -446,5 +510,146 @@
     text-decoration: none;
     border-radius: 5px;
     margin: 0px 100px;
+  }
+
+  .acordeon-item-body-content P {
+    font-size: 10px;
+  }
+}
+
+/*--- RESPONSIVE 901PX - 900PX ----
+-----------------------------------
+---------------------------------*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  /*--Barra de navegación --*/
+  .logomarguz {
+    width: 130px;
+  }
+  /*--Panel izquierdo --*/
+  .panel-izquierdo {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+  }
+
+  .dropdown .btn {
+    background: none;
+    color: #474747;
+    border: none;
+  }
+
+  .dropdown .btn:hover {
+    background: none;
+    color: #474747;
+  }
+  /*--CONTENEDOR TOTAL CONTENIDO --
+  ---------------------------------*/
+  .contenedor-contenido {
+    margin: 60px 0px 0px 0px;
+  }
+
+  .tit-saludosSeparacion {
+    padding: 5px 0px;
+    font-size: 20px;
+  }
+
+  /*--SECCIÓN DIAPOSITIVAS --*/
+  .presentacion-general {
+    padding: 0px 40px;
+  }
+
+  .caption-presentacion p {
+    font-size: 14px;
+  }
+
+  .boton-down {
+    text-align: center;
+    margin: 10px 20px;
+  }
+
+  .boton-down a {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+
+  /*-- TITULOS EN GENERAL --*/
+  .seccion-titulos {
+    display: block;
+    justify-content: center;
+    text-align: start;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .seccion-titulos h1 {
+    font-family: var(--letra-titulo);
+    color: var(--color-letra2);
+    padding: 0px 20px;
+    font-size: 26px;
+  }
+
+  .seccion-titulos hr {
+    background: var(--primary-color);
+    margin-left: 20px;
+  }
+
+  /*--SECCION VIDEOS ------*/
+  .videos-explicaciones {
+    padding: 10px 0px;
+  }
+
+  .seccion-videos {
+    column-gap: 20px;
+    padding: 0px 40px;
+  }
+
+  .videos {
+    border-radius: 5px;
+  }
+
+  .videos img {
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .videos h3 {
+    padding: 10px 0px 0px 0px;
+    font-size: 14px;
+  }
+
+  .videos p {
+    padding: 5px 0px 0px 0px;
+    font-size: 12px;
+  }
+
+  /*--SECCION ACORDEON ------*/
+  .acordeon-item {
+    margin: 10px 30px;
+    border: var(--primary-color);
+    border-radius: 10px;
+  }
+
+  .acordeon-item-header {
+    height: 85px;
+  }
+
+  .acordeon-item-header h3 {
+    font-size: 18px;
+  }
+
+  .acordeon-item-header p {
+    font-size: 14px;
+    padding: 0px 25px 0px 0px;
+  }
+
+  .acordeon-item-body-content a {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 20px;
+    margin: 0px 100px;
+  }
+
+  .acordeon-item-body-content P {
+    font-size: 14px;
   }
 }

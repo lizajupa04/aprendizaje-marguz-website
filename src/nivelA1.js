@@ -20,13 +20,6 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
   });
 });
 
-const myCarouselElement = document.querySelector("#myCarousel");
-
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 2000,
-  touch: false,
-});
-
 const myCarouselElement1 = document.querySelector("#myCarousel1");
 
 const carousel1 = new bootstrap.Carousel(myCarouselElement1, {
@@ -55,7 +48,7 @@ const carousel4 = new bootstrap.Carousel(myCarouselElement4, {
   touch: false,
 });
 
-const myCarouselElement5 = document.querySelector("#myCarousel5");
+const myCarouselElemen5 = document.querySelector("#myCarousel5");
 
 const carousel5 = new bootstrap.Carousel(myCarouselElement5, {
   interval: 2000,
@@ -72,6 +65,13 @@ const carousel6 = new bootstrap.Carousel(myCarouselElement6, {
 const myCarouselElement7 = document.querySelector("#myCarousel7");
 
 const carousel7 = new bootstrap.Carousel(myCarouselElement7, {
+  interval: 2000,
+  touch: false,
+});
+
+const myCarouselElement8 = document.querySelector("#myCarousel8");
+
+const carousel8 = new bootstrap.Carousel(myCarouselElement8, {
   interval: 2000,
   touch: false,
 });
