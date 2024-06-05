@@ -14,8 +14,40 @@
   margin-right: 30px;
 }
 
+.logomarguz {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.navbar {
+  background: #f0f0f0;
+  border-bottom: 1px solid #9e9e9e59;
+}
+
+.navbar-nav a {
+  color: #db1f37;
+  font-weight: 500;
+}
+
 /*------HERO ------------
 ---------------------------*/
+.contenedor-hero {
+  display: flex;
+  justify-content: center;
+  margin: 30px 20px 0px 20px;
+}
+
+.columna1 {
+  margin: 10px;
+  padding-top: 20px;
+  text-align: start;
+}
+
+.columna2 {
+  margin: 10px;
+  text-align: center;
+}
+
 .titulo {
   background: linear-gradient(
     252deg,
@@ -27,22 +59,31 @@
   -webkit-text-fill-color: transparent;
   font-size: 80px;
   font-weight: bold;
-  margin-left: 80px;
 }
 
-.seccion-hero {
-  margin-top: 100px;
+.columna2 img {
+  width: 100%;
 }
 
 .btn-aprendizaje {
+  font-family: "Lexend", sans-serif;
   color: white;
-  width: 150px;
-  height: 50px;
+  padding: 10px 30px;
   margin-top: 40px;
-  margin-left: 80px;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   background: #db1f27;
+  transition: all 0.1s ease-in;
+}
+
+.btn-aprendizaje:hover {
+  transition: all 0.1s ease-in;
+  background: #2c2c2c;
+  box-shadow: 2px 2px 3px rgb(95, 95, 95);
+}
+
+.contenedor500 {
+  display: none;
 }
 
 /*----CONTENEDOR NIVELES -----
@@ -53,7 +94,6 @@
   justify-content: center;
   text-align: center;
   margin: 100px 0px 0px 0px;
-  border: 2px solid red;
 }
 
 .titulo-niveles h1 {
@@ -67,29 +107,30 @@
   grid-template-columns: 50% 50%;
   justify-content: center;
   text-align: center;
-  margin: 30px 90px 0px 90px;
+  margin: 30px 80px 0px 80px;
 }
 
 .a1 {
+  font-family: "Lexend", sans-serif;
   background: linear-gradient(
     93deg,
     #db1f27 32.22%,
     rgba(219, 31, 41, 0.521) 101.83%
   );
-  margin: 10px 90px;
+  margin: 10px 30px;
   padding: 30px;
   text-decoration: none;
   color: white;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 400;
   border-radius: 20px;
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 .a1:hover {
   background: #2c2c2c;
   box-shadow: 4px 4px 4px gray;
-  transition: all 0.3s ease-in;
+  transition: all 0.1s ease-in;
   transform: translateY(-5px);
 }
 
@@ -149,23 +190,27 @@
 }
 
 .descripcion-piepagina {
-  color: rgb(184, 182, 182);
-  font-size: 20px;
+  font-family: "Lexend", sans-serif;
+  color: white;
+  font-size: 18px;
   padding-top: 10px;
   margin-right: 30px;
   text-align: end;
 }
 
-@media screen and (max-width: 500px) {
-  .seccion-hero {
+@media screen and (max-width: 600px) {
+  .logomarguz {
+    width: 100px;
+    margin-left: 20px;
+  }
+
+  .contenedor-hero {
     display: none;
   }
+
   /*----HERO 500 -----*/
   .contenedor500 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    display: block;
   }
 
   .titulo500 h1 {
@@ -196,11 +241,20 @@
   }
 
   .btn-aprendizaje500 button {
+    font-family: "Lexend", sans-serif;
     background: #db1f27;
     padding: 5px 20px;
     border: none;
     border-radius: 5px;
     color: white;
+    transition: all 0.1s ease-in;
+    font-size: 14px;
+  }
+
+  .btn-aprendizaje500 button:hover {
+    transition: all 0.1s ease-in;
+    background: #2c2c2c;
+    box-shadow: 2px 2px 3px rgb(95, 95, 95);
   }
   /*----NIVELES 500 -----*/
   .titulo-niveles h1 {
@@ -216,19 +270,138 @@
   }
 
   .a1 {
+    font-family: "Lexend", sans-serif;
     margin: 5px 50px;
     padding: 10px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 400;
     border-radius: 10px;
   }
 
   /*----FOOTER 500 -----*/
   .descripcion-piepagina {
-    color: rgb(184, 182, 182);
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .logomarguz {
+    width: 110px;
+    margin-left: 20px;
+  }
+
+  .contenedor-hero {
+    display: none;
+  }
+
+  /*----HERO 500 -----*/
+  .contenedor500 {
+    display: block;
+  }
+
+  .titulo500 h1 {
+    background: linear-gradient(
+      252deg,
+      #d94343 14.95%,
+      rgba(40, 10, 10, 0.44) 106.24%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+
+  .imagenhero {
+    text-align: center;
+  }
+
+  .imagenhero img {
+    width: 300px;
+  }
+
+  .btn-aprendizaje500 {
+    text-align: center;
+  }
+
+  .btn-aprendizaje500 button {
+    font-family: "Lexend", sans-serif;
+    background: #db1f27;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+
+  /*----NIVELES 500 -----*/
+  .titulo-niveles h1 {
+    font-size: 40px;
+  }
+
+  .niveles {
+    margin: 30px 0px 0px 0px;
+  }
+
+  .a1 {
+    font-family: "Lexend", sans-serif;
+    background: linear-gradient(
+      93deg,
+      #db1f27 32.22%,
+      rgba(219, 31, 41, 0.521) 101.83%
+    );
+    margin: 10px 30px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
     font-size: 18px;
-    padding-top: 10px;
-    margin-right: 30px;
-    text-align: end;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 950px) {
+  .titulo {
+    background: linear-gradient(
+      252deg,
+      #d94343 14.95%,
+      rgba(40, 10, 10, 0.44) 106.24%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .columna2 img {
+    width: 350px;
+  }
+
+  .titulo-niveles h1 {
+    font-size: 45px;
+  }
+
+  .niveles {
+    margin: 30px 20px 0px 20px;
+  }
+
+  .a1 {
+    font-family: "Lexend", sans-serif;
+    background: linear-gradient(
+      93deg,
+      #db1f27 32.22%,
+      rgba(219, 31, 41, 0.521) 101.83%
+    );
+    margin: 10px 30px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
   }
 }

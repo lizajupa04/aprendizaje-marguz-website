@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <title>Marguz Learning</title>
@@ -10,7 +9,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="#" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/src/nivelA1.css" rel="stylesheet" type="text/css" />
+    <link href="/src/nivel-A2 .css" rel="stylesheet" type="text/css" />
 
     <!-- BOOSTRAP -->
     <link
@@ -33,27 +32,91 @@
     />
   </head>
   <body>
-    <!--==============PANEL IZQUIERDO=======
-        ====================================-->
-    <div class="contenedor">
-      <div class="panel-izquierdo">
-        <div class="titulo-A1">
-          <h2>Nivel A1</h2>
-        </div>
-        <div class="links-nivel">
-          <a class="link-A1 item" href="#saludos-A1">👋 Saludos</a>
-          <a class="link-A1 item" href="#despedidas-A1">👋 Despedidas</a>
-          <a class="link-A1 item" href="#alfabeto-A1">🐡 Alfabeto</a>
-          <a class="link-A1 item" href="#colores-A1">👩‍🎨 Colores</a>
-          <a class="link-A1 item" href="#numeros1-20-A1">📅 Los números 1-20</a>
-          <a class="link-A1 item" href="#dias-semana-A1"
-            >🌚 Días de la semana</a
+    <!-- BARRA NAVEGACIÓN-->
+    <div class="barra-navegacion">
+      <nav class="navbar fixed-top navbar-expand-lg bg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              class="logomarguz"
+              src="/img/Logo-marguz.png"
+              alt="Logo Marguz"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-          <a class="link-A1 item" href="#continentes-A1">🚩 Los continentes</a>
-          <a class="link-A1 item" href="#paises-A1">🗺️ Los países</a>
-          <a class="link-A1 item" href="">🌍 Nacionalidades</a>
-          <a class="link-A1 item" href="#saludos-A1">☝️ Pronombres</a>
-          <a class="link-A1 item" href="#despedidas-A1"> 👩‍🏫 Verbo SER</a>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end links"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Inicio</a
+              >
+              <a class="nav-link" href="/index.html#titulo-nivel"
+                >Aprendizaje</a
+              >
+              <a class="nav-link" href="/">Contacto</a>
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Temas Nivel A1
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#saludos-A1">👋 Saludos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#despedidas-A1"
+                      >👋 Despedidas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#alfabeto-A1">🐡 Alfabeto</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#colores-A1">👩‍🎨 Colores</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#numeros1-20-A1"
+                      >📅 Los números 1-20</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#diassemana-A1"
+                      >🌚 Días de la semana</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="contenedor-principal">
+      <div class="panel-izquierdo">
+        <div class="tit-nivelA1">
+          <h2>Nivel A2</h2>
+        </div>
+        <div class="temas-nivelA1">
+          <a class="link-A1 item" href="#saludos-A1">💚 Expresar deseos</a>
+          <a class="link-A1 item" href="#despedidas-A1">👋 Despedidas</a>
         </div>
         <div class="botones-panel">
           <a class="btn-1" href="#">Diferentes temas</a>
@@ -65,68 +128,28 @@
         </div>
       </div>
 
-      <div class="contenido-saludos">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"
-              ><img
-                class="logomarguz"
-                src="/img/Logo-marguz.png"
-                alt="Logo Marguz"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end links"
-              id="navbarNavAltMarkup"
-            >
-              <div class="navbar-nav">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                <a class="nav-link" href="/">Aprendizaje</a>
-                <a class="nav-link" href="/">Contacto</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        <div class="header-saludos">
-          <div class="logo-marguz">
-            <img src="/img/Logo-marguz.png" alt="" />
-          </div>
-          <div class="link-inicio">
-            <a href="/index.html">Inicio</a>
-          </div>
-        </div>
-
-        <!--******** S A L U D O S *********** 
+      <div class="contenedor-contenido">
+        <h1 class="tit-saludosSeparacion" id="saludos-A1">Saludos</h1>
+        <!--******** DESEOS *********** 
         **************************************
         **************************************
         ************************************** -->
 
         <!-- Presentación Saludos -----
         ------------------------------->
-        <div class="presentacion-general1" id="saludos-A1">
-          <div id="myCarousel" class="carousel container-fluid slide">
+        <div class="presentacion-general">
+          <div id="myCarousel1" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="/img/Nivel-A1/presentaciones-canva/1.Saludos.jpg"
+                  src="/img/Nivel-A2/Presentacion canva/1.Expresar deseos.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="/img/Nivel-A1/presentaciones-canva/2. Saludos.jpg"
+                  src="/img/Nivel-A2/Presentacion canva/2. Expresar deseos.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -142,7 +165,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#myCarousel"
+              data-bs-target="#myCarousel1"
               data-bs-slide="prev"
             >
               <span
@@ -154,7 +177,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#myCarousel"
+              data-bs-target="#myCarousel1"
               data-bs-slide="next"
             >
               <span
@@ -172,12 +195,15 @@
           </div>
 
           <div class="boton-down">
-            <a href="#video-explicacion1">Videos sobre los Saludos 👇</a>
+            <a href="#video-explicacionSaludos">Videos sobre los Saludos 👇</a>
           </div>
         </div>
 
         <!-- Videos de Saludos --------
         ------------------------------->
+        <h1 class="tit-saludosSeparacion" id="video-explicacionSaludos">
+          Videos Saludos
+        </h1>
         <div
           class="videos-explicaciones container-fluid"
           id="video-explicacion1"
@@ -215,12 +241,15 @@
             </div>
           </div>
           <div class="boton-down">
-            <a href="#acordeon1">Videos sobre los Saludos 👇</a>
+            <a href="#acordeon-saludos">Contenido Saludos 👇</a>
           </div>
         </div>
 
         <!-- Acordeon de saludos ------
         ------------------------------->
+        <h1 class="tit-saludosSeparacion" id="acordeon-saludos">
+          Videos Saludos
+        </h1>
         <div class="acordeon" id="acordeon1">
           <div class="seccion-titulos">
             <h1>Practiquémos</h1>
@@ -231,8 +260,8 @@
               <div class="contenido-header">
                 <h3>Infografía & Quiz</h3>
                 <p>
-                  Aprende con la infografía sobre los saludos y realiza el Quiz
-                  retarte. buena suerte
+                  Aprende con la infografía y realiza el Quiz retarte. buena
+                  suerte
                 </p>
               </div>
             </div>
@@ -304,19 +333,27 @@
 
         <hr />
 
-        <!--******** DESPEDIDAS ************* 
+        <h1 class="tit-saludosSeparacion" id="despedidas-A1">Despedidas</h1>
+        <!--***** D E S P E D I D A S  ******* 
         **************************************
         **************************************
         ************************************** -->
 
-        <!-- Presentación de despedidas---
-        ----------------------------------->
-        <div class="presentacion-general2" id="despedidas-A1">
-          <div id="myCarousel1" class="carousel slide">
+        <!-- Presentación Despedidas --
+        ------------------------------->
+        <div class="presentacion-general">
+          <div id="myCarousel2" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
                   src="/img/Nivel-A1/presentaciones-canva/3.Despedidas.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/img/Nivel-A1/presentaciones-canva/4. Despedidas.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -339,7 +376,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#myCarousel1"
+              data-bs-target="#myCarousel2"
               data-bs-slide="prev"
             >
               <span
@@ -351,7 +388,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#myCarousel1"
+              data-bs-target="#myCarousel2"
               data-bs-slide="next"
             >
               <span
@@ -367,14 +404,23 @@
               aprecer una mano 👆, dale clic y pasa la presentación.
             </p>
           </div>
+
           <div class="boton-down">
-            <a href="#videos-explicacion2">Videos sobre las despedidas 👇 </a>
+            <a href="#video-explicacionDespedidas"
+              >Videos sobre las despedidas 👇</a
+            >
           </div>
         </div>
 
-        <!------ Videos de despedidas------
-        ----------------------------------->
-        <div class="videos-explicaciones" id="videos-explicacion2">
+        <!-- Videos de despedidas ------
+        ------------------------------->
+        <h1 class="tit-saludosSeparacion" id="video-explicacionDespedidas">
+          Videos Saludos
+        </h1>
+        <div
+          class="videos-explicaciones container-fluid"
+          id="video-explicacion1"
+        >
           <div class="seccion-titulos">
             <h1 class="tit-vid">Explicación & Ejercicios</h1>
             <hr class="tit-vid" />
@@ -408,12 +454,15 @@
             </div>
           </div>
           <div class="boton-down">
-            <a href="#acordeon2">Practiquémos las despedidas 👇 </a>
+            <a href="#acordeon-despedidas">Contenido despedidas 👇</a>
           </div>
         </div>
 
-        <!-- Acordeon de despedidas----
+        <!-- Acordeon de despedidas ------
         ------------------------------->
+        <h1 class="tit-saludosSeparacion" id="acordeon-despedidas">
+          Videos Saludos
+        </h1>
         <div class="acordeon" id="acordeon2">
           <div class="seccion-titulos">
             <h1>Practiquémos</h1>
@@ -424,25 +473,20 @@
               <div class="contenido-header">
                 <h3>Infografía & Quiz</h3>
                 <p>
-                  Aprende con la infografía sobre las despedidas y realiza el
-                  Quiz y retarte. Buena suerte
+                  Aprende con la infografía y realiza el Quiz retarte. buena
+                  suerte
                 </p>
               </div>
             </div>
             <div class="acordeon-item-body">
               <div class="acordeon-item-body-content">
-                <p>
-                  Diviértete aprendiendo. Vamos a jugar con Wordwall completando
-                  el anagramas
-                </p>
-                <iframe
-                  style="max-width: 100%"
-                  src="https://wordwall.net/es/embed/32d9d8efc0354ac9badc112779ff5ac0?themeId=41&templateId=38&fontStackId=0"
-                  width="400"
-                  height="280"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
+                <a href="">Quiz</a>
+                <br />
+                <br />
+                <img
+                  src="/img/Nivel-A1/Infografias/1. Infografía-saludos.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -502,15 +546,16 @@
 
         <hr />
 
-        <!--******** A L F A B E T O  ******** 
+        <h1 class="tit-saludosSeparacion" id="alfabeto-A1">Alfabeto</h1>
+        <!--***** A L F A B E T O   ********** 
         **************************************
         **************************************
         ************************************** -->
 
-        <!-- Presentación de alfabeto---
-        ----------------------------------->
-        <div class="presentacion-general2" id="alfabeto-A1">
-          <div id="myCarousel2" class="carousel slide">
+        <!-- Presentación Alfabeto --
+        ------------------------------->
+        <div class="presentacion-general">
+          <div id="myCarousel3" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -551,7 +596,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#myCarousel2"
+              data-bs-target="#myCarousel3"
               data-bs-slide="prev"
             >
               <span
@@ -563,7 +608,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#myCarousel2"
+              data-bs-target="#myCarousel3"
               data-bs-slide="next"
             >
               <span
@@ -579,14 +624,21 @@
               aprecer una mano 👆, dale clic y pasa la presentación.
             </p>
           </div>
+
           <div class="boton-down">
-            <a href="#videos-explicacion3">Videos sobre el alfabeto 👇 </a>
+            <a href="#video-explicacionAlfabeto">Videos sobre el alfabeto 👇</a>
           </div>
         </div>
 
-        <!------ Videos de alfabeto------
-        ----------------------------------->
-        <div class="videos-explicaciones" id="videos-explicacion3">
+        <!-- Videos de alfabeto ------
+        ------------------------------->
+        <h1 class="tit-saludosSeparacion" id="video-explicacionAlfabeto">
+          Videos Alfabeto
+        </h1>
+        <div
+          class="videos-explicaciones container-fluid"
+          id="video-explicacion1"
+        >
           <div class="seccion-titulos">
             <h1 class="tit-vid">Explicación & Ejercicios</h1>
             <hr class="tit-vid" />
@@ -617,13 +669,16 @@
             </div>
           </div>
           <div class="boton-down">
-            <a href="#acordeon3">Practiquémos el alfabeto 👇 </a>
+            <a href="#acordeon-alfabeto">Contenido Alfabeto 👇</a>
           </div>
         </div>
 
-        <!-- Acordeon de alfabeto----
+        <!-- Acordeon de alfabeto ------
         ------------------------------->
-        <div class="acordeon" id="acordeon3">
+        <h1 class="tit-saludosSeparacion" id="acordeon-alfabeto">
+          Videos Saludos
+        </h1>
+        <div class="acordeon" id="acordeon1">
           <div class="seccion-titulos">
             <h1>Practiquémos</h1>
             <hr />
@@ -633,25 +688,17 @@
               <div class="contenido-header">
                 <h3>Infografía & Quiz</h3>
                 <p>
-                  Aprende con la infografía sobre el alfabeto y realiza el Quiz
-                  y retarte. Buena suerte
+                  Aprende con la infografía y realiza el Quiz retarte. buena
+                  suerte
                 </p>
               </div>
             </div>
             <div class="acordeon-item-body">
               <div class="acordeon-item-body-content">
-                <p>
-                  Diviértete aprendiendo. Vamos a jugar con Wordwall completando
-                  el anagramas
-                </p>
-                <iframe
-                  style="max-width: 100%"
-                  src="https://wordwall.net/es/embed/32d9d8efc0354ac9badc112779ff5ac0?themeId=41&templateId=38&fontStackId=0"
-                  width="400"
-                  height="280"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
+                <a href="">Quiz</a>
+                <br />
+                <br />
+                <img src="#" alt="" />
               </div>
             </div>
           </div>
@@ -659,7 +706,7 @@
           <div class="acordeon-item">
             <div class="acordeon-item-header">
               <div class="contenido-header">
-                <h3>Material PDF de Saludos</h3>
+                <h3>Material PDF de Alfabeto</h3>
                 <p>
                   Mira el material PDF y descargarlo para que puedas practicar.
                 </p>
@@ -705,20 +752,22 @@
             </div>
           </div>
           <div class="boton-down">
-            <a href="#colores-A1">👇 </a>
+            <a href="#colores-A1">👇</a>
           </div>
         </div>
 
         <hr />
 
-        <!--******** C O L O R E S *********** 
+        <h1 class="tit-saludosSeparacion" id="colores-A1">Colores</h1>
+        <!--***** C O L O R E S    ********** 
         **************************************
         **************************************
-        ********************************** -->
-        <!-- Presentación de los colores---
-        ----------------------------------->
-        <div class="presentacion-general2" id="colores-A1">
-          <div id="myCarousel3" class="carousel slide">
+        ************************************** -->
+
+        <!-- Presentación Colores --
+        ------------------------------->
+        <div class="presentacion-general">
+          <div id="myCarousel4" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -741,6 +790,7 @@
                   alt="..."
                 />
               </div>
+
               <div class="carousel-item">
                 <img
                   src="/img/Nivel-A1/presentaciones-canva/Pres final.jpg"
@@ -752,7 +802,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#myCarousel3"
+              data-bs-target="#myCarousel4"
               data-bs-slide="prev"
             >
               <span
@@ -764,7 +814,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#myCarousel3"
+              data-bs-target="#myCarousel4"
               data-bs-slide="next"
             >
               <span
@@ -780,14 +830,21 @@
               aprecer una mano 👆, dale clic y pasa la presentación.
             </p>
           </div>
+
           <div class="boton-down">
-            <a href="#videos-explicacion4">Videos sobre los colores 👇 </a>
+            <a href="#video-explicacionColores">Videos sobre los colores 👇</a>
           </div>
         </div>
 
-        <!------ Videos de los colores------
-        ----------------------------------->
-        <div class="videos-explicaciones" id="videos-explicacion4">
+        <!-- Videos de los colores ------
+        ------------------------------->
+        <h1 class="tit-saludosSeparacion" id="video-explicacionColores">
+          Colores
+        </h1>
+        <div
+          class="videos-explicaciones container-fluid"
+          id="video-explicacion1"
+        >
           <div class="seccion-titulos">
             <h1 class="tit-vid">Explicación & Ejercicios</h1>
             <hr class="tit-vid" />
@@ -821,13 +878,14 @@
             </div>
           </div>
           <div class="boton-down">
-            <a href="#acordeon4">Practiquémos los colores 👇 </a>
+            <a href="#acordeon-colores">Contenido Colores 👇</a>
           </div>
         </div>
 
-        <!-- Acordeon de los colores----
+        <!-- Acordeon de colores ------
         ------------------------------->
-        <div class="acordeon" id="acordeon4">
+        <h1 class="tit-saludosSeparacion" id="acordeon-colores">colores</h1>
+        <div class="acordeon" id="acordeon1">
           <div class="seccion-titulos">
             <h1>Practiquémos</h1>
             <hr />
@@ -837,25 +895,17 @@
               <div class="contenido-header">
                 <h3>Infografía & Quiz</h3>
                 <p>
-                  Aprende con la infografía sobre los colores y realiza el Quiz
-                  y retarte. Buena suerte
+                  Aprende con la infografía y realiza el Quiz retarte. buena
+                  suerte
                 </p>
               </div>
             </div>
             <div class="acordeon-item-body">
               <div class="acordeon-item-body-content">
-                <p>
-                  Diviértete aprendiendo. Vamos a jugar con Wordwall completando
-                  el anagramas
-                </p>
-                <iframe
-                  style="max-width: 100%"
-                  src="https://wordwall.net/es/embed/32d9d8efc0354ac9badc112779ff5ac0?themeId=41&templateId=38&fontStackId=0"
-                  width="400"
-                  height="280"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
+                <a href="">Quiz</a>
+                <br />
+                <br />
+                <img src="#" alt="" />
               </div>
             </div>
           </div>
@@ -863,7 +913,7 @@
           <div class="acordeon-item">
             <div class="acordeon-item-header">
               <div class="contenido-header">
-                <h3>Material PDF de Saludos</h3>
+                <h3>Material PDF de Alfabeto</h3>
                 <p>
                   Mira el material PDF y descargarlo para que puedas practicar.
                 </p>
@@ -909,20 +959,22 @@
             </div>
           </div>
           <div class="boton-down">
-            <a href="#numeros1-20-A1">👇 </a>
+            <a href="#numeros1-20-A1">👇</a>
           </div>
         </div>
 
         <hr />
 
-        <!--******** N U M E R O S 1-20 ****** 
+        <h1 class="tit-saludosSeparacion" id="numeros1-20-A1">Colores</h1>
+        <!--***** NUMEROS DEL 1 AL 20  ******* 
         **************************************
         **************************************
         ************************************** -->
-        <!-- Presentación de los números---
-        ----------------------------------->
-        <div class="presentacion-general2" id="numeros1-20-A1">
-          <div id="myCarousel4" class="carousel slide">
+
+        <!-- Presentación Colores --
+        ------------------------------->
+        <div class="presentacion-general">
+          <div id="myCarousel5" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -945,6 +997,7 @@
                   alt="..."
                 />
               </div>
+
               <div class="carousel-item">
                 <img
                   src="/img/Nivel-A1/presentaciones-canva/Pres final.jpg"
@@ -956,7 +1009,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#myCarousel4"
+              data-bs-target="#myCarousel5"
               data-bs-slide="prev"
             >
               <span
@@ -968,7 +1021,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#myCarousel4"
+              data-bs-target="#myCarousel5"
               data-bs-slide="next"
             >
               <span
@@ -984,14 +1037,21 @@
               aprecer una mano 👆, dale clic y pasa la presentación.
             </p>
           </div>
+
           <div class="boton-down">
-            <a href="#videos-explicacion5">Videos sobre los números 👇 </a>
+            <a href="#video-explicacionNumeros1-20">Videos números 1-20 👇</a>
           </div>
         </div>
 
-        <!------ Videos de los numeros------
-        ----------------------------------->
-        <div class="videos-explicaciones" id="videos-explicacion5">
+        <!-- Videos de los colores ------
+        ------------------------------->
+        <h1 class="tit-saludosSeparacion" id="video-explicacionNumeros1-20">
+          Colores
+        </h1>
+        <div
+          class="videos-explicaciones container-fluid"
+          id="video-explicacion1"
+        >
           <div class="seccion-titulos">
             <h1 class="tit-vid">Explicación & Ejercicios</h1>
             <hr class="tit-vid" />
@@ -1000,7 +1060,7 @@
             <div class="videos">
               <a href="">
                 <img
-                  src="/img/Nivel-A1/portadas-videos/Img-numeros-video-1.jpg"
+                  src="/img/Nivel-A1/portadas-videos/Img-numeros-1-20-video-2.jpg"
                   alt=""
                 />
                 <h3>Explicación</h3>
@@ -1025,13 +1085,14 @@
             </div>
           </div>
           <div class="boton-down">
-            <a href="#acordeon5">Practiquémos los números 1-20 👇 </a>
+            <a href="#acordeon-numeros1-20">Contenido Números 1-20 👇</a>
           </div>
         </div>
 
-        <!-- Acordeon de los números 1-20----
+        <!-- Acordeon de colores ------
         ------------------------------->
-        <div class="acordeon" id="acordeon5">
+        <h1 class="tit-saludosSeparacion" id="acordeon-numeros1-20">colores</h1>
+        <div class="acordeon" id="acordeon1">
           <div class="seccion-titulos">
             <h1>Practiquémos</h1>
             <hr />
@@ -1041,25 +1102,17 @@
               <div class="contenido-header">
                 <h3>Infografía & Quiz</h3>
                 <p>
-                  Aprende con la infografía sobre los números del 1 al 20 y
-                  realiza el Quiz y retarte. Buena suerte
+                  Aprende con la infografía y realiza el Quiz retarte. buena
+                  suerte
                 </p>
               </div>
             </div>
             <div class="acordeon-item-body">
               <div class="acordeon-item-body-content">
-                <p>
-                  Diviértete aprendiendo. Vamos a jugar con Wordwall completando
-                  el anagramas
-                </p>
-                <iframe
-                  style="max-width: 100%"
-                  src="https://wordwall.net/es/embed/32d9d8efc0354ac9badc112779ff5ac0?themeId=41&templateId=38&fontStackId=0"
-                  width="400"
-                  height="280"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
+                <a href="">Quiz</a>
+                <br />
+                <br />
+                <img src="#" alt="" />
               </div>
             </div>
           </div>
@@ -1067,7 +1120,7 @@
           <div class="acordeon-item">
             <div class="acordeon-item-header">
               <div class="contenido-header">
-                <h3>Material PDF de Saludos</h3>
+                <h3>Material PDF de los números 1-20</h3>
                 <p>
                   Mira el material PDF y descargarlo para que puedas practicar.
                 </p>
@@ -1113,20 +1166,22 @@
             </div>
           </div>
           <div class="boton-down">
-            <a href="#dias-semana-A1">👇 </a>
+            <a href="#diassemana-A1">👇</a>
           </div>
         </div>
 
         <hr />
 
-        <!--******** DIAS DE LA SEMANA ******* 
+        <h1 class="tit-saludosSeparacion" id="diassemana-A1">Colores</h1>
+        <!--***** NUMEROS DEL 1 AL 20  ******* 
         **************************************
         **************************************
         ************************************** -->
-        <!-- Presentación de los dias de la semana---
-        --------------------------------------------->
-        <div class="presentacion-general2" id="dias-semana-A1">
-          <div id="myCarousel5" class="carousel slide">
+
+        <!-- Presentación Colores --
+        ------------------------------->
+        <div class="presentacion-general">
+          <div id="myCarousel6" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
@@ -1156,13 +1211,7 @@
                   alt="..."
                 />
               </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/16. Dias semana.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
+
               <div class="carousel-item">
                 <img
                   src="/img/Nivel-A1/presentaciones-canva/Pres final.jpg"
@@ -1174,7 +1223,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#myCarousel5"
+              data-bs-target="#myCarousel6"
               data-bs-slide="prev"
             >
               <span
@@ -1186,7 +1235,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#myCarousel5"
+              data-bs-target="#myCarousel6"
               data-bs-slide="next"
             >
               <span
@@ -1202,14 +1251,21 @@
               aprecer una mano 👆, dale clic y pasa la presentación.
             </p>
           </div>
+
           <div class="boton-down">
-            <a href="#videos-explicacion6">Videos sobre los días 👇</a>
+            <a href="#video-explicacionDiasSemana">Videos días de semana 👇</a>
           </div>
         </div>
 
-        <!------ Videos de los dias de la semana------
-        ---------------------------------------------->
-        <div class="videos-explicaciones" id="videos-explicacion6">
+        <!-- Videos de los días de la semana ------
+        ------------------------------------------->
+        <h1 class="tit-saludosSeparacion" id="video-explicacionDiasSemana">
+          Dias de la semana
+        </h1>
+        <div
+          class="videos-explicaciones container-fluid"
+          id="video-explicacion1"
+        >
           <div class="seccion-titulos">
             <h1 class="tit-vid">Explicación & Ejercicios</h1>
             <hr class="tit-vid" />
@@ -1223,7 +1279,7 @@
                 />
                 <h3>Explicación</h3>
                 <p>
-                  Una explicación sobre los días de la semana en español.
+                  Una explicación sobre los de la semana en español.
                   Aprenderemos su pronunciación y cómo se escriben
                 </p>
               </a>
@@ -1236,20 +1292,23 @@
                 />
                 <h3>Ejercicios</h3>
                 <p>
-                  Una explicación sobre los días de la semana en español.
+                  Una explicación sobre los de la semana en español.
                   Aprenderemos su pronunciación y cómo se escriben.
                 </p>
               </a>
             </div>
           </div>
           <div class="boton-down">
-            <a href="#acordeon6">Practiquémos los días de la semana 👇 </a>
+            <a href="#acordeon-diassemana">Contenido días semana 👇</a>
           </div>
         </div>
 
-        <!-- Acordeon de los días de la semana----
-        ------------------------------------------>
-        <div class="acordeon" id="acordeon6">
+        <!-- Acordeon dias de la semana------
+        ------------------------------------->
+        <h1 class="tit-saludosSeparacion" id="acordeon-diassemana">
+          Dias de la semana
+        </h1>
+        <div class="acordeon" id="acordeon1">
           <div class="seccion-titulos">
             <h1>Practiquémos</h1>
             <hr />
@@ -1259,25 +1318,17 @@
               <div class="contenido-header">
                 <h3>Infografía & Quiz</h3>
                 <p>
-                  Aprende con la infografía sobre los días de la semana y
-                  realiza el Quiz y retarte. Buena suerte
+                  Aprende con la infografía y realiza el Quiz retarte. buena
+                  suerte
                 </p>
               </div>
             </div>
             <div class="acordeon-item-body">
               <div class="acordeon-item-body-content">
-                <p>
-                  Diviértete aprendiendo. Vamos a jugar con Wordwall completando
-                  el anagramas
-                </p>
-                <iframe
-                  style="max-width: 100%"
-                  src="https://wordwall.net/es/embed/32d9d8efc0354ac9badc112779ff5ac0?themeId=41&templateId=38&fontStackId=0"
-                  width="400"
-                  height="280"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
+                <a href="">Quiz</a>
+                <br />
+                <br />
+                <img src="#" alt="" />
               </div>
             </div>
           </div>
@@ -1285,7 +1336,7 @@
           <div class="acordeon-item">
             <div class="acordeon-item-header">
               <div class="contenido-header">
-                <h3>Material PDF de Saludos</h3>
+                <h3>Material PDF de los días de la semana</h3>
                 <p>
                   Mira el material PDF y descargarlo para que puedas practicar.
                 </p>
@@ -1331,468 +1382,13 @@
             </div>
           </div>
           <div class="boton-down">
-            <a href="#continentes-A1">👇 </a>
+            <a href="#continentes-A1">👇</a>
           </div>
         </div>
 
         <hr />
-
-        <!--******** LOS CONTINENTES ******** 
-        **************************************
-        **************************************
-        ************************************** -->
-
-        <!-- Presentación de los continentes---------
-        --------------------------------------------->
-        <div class="presentacion-general2" id="continentes-A1">
-          <div id="myCarousel6" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/17. Continentes.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/18. Continentes.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/19. Continentes.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/20. Continentes.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/21. Continentes.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/22. Continentes.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/Pres final.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#myCarousel6"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#myCarousel6"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <div class="caption-presentacion">
-            <p>
-              Ubica el cursor en los lados laterales de la presentación. Te va a
-              aprecer una mano 👆, dale clic y pasa la presentación.
-            </p>
-          </div>
-          <div class="boton-down">
-            <a href="#videos-explicacion7">Videos sobre los continentes 👇</a>
-          </div>
-        </div>
-
-        <!------ Videos de los continentes------------
-        ---------------------------------------------->
-        <div class="videos-explicaciones" id="videos-explicacion7">
-          <div class="seccion-titulos">
-            <h1 class="tit-vid">Explicación & Ejercicios</h1>
-            <hr class="tit-vid" />
-          </div>
-          <div class="seccion-videos">
-            <div class="videos">
-              <a href="">
-                <img src="/img/Nivel-A1/Img- NoDisponible.jpg" alt="" />
-                <h3>Explicación</h3>
-                <p>
-                  Una explicación sobre los continentes en español. Aprenderemos
-                  su pronunciación y cómo se escriben
-                </p>
-              </a>
-            </div>
-            <div class="videos">
-              <a href="">
-                <img src="/img/Nivel-A1/Img- NoDisponible.jpg" alt="" />
-                <h3>Ejercicios</h3>
-                <p>
-                  Una explicación sobre los continentes en español. Aprenderemos
-                  su pronunciación y cómo se escriben.
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="boton-down">
-            <a href="#acordeon7">Practiquémos los continentes 👇 </a>
-          </div>
-        </div>
-
-        <!-- Acordeon de los continentes----------
-        ------------------------------------------>
-        <div class="acordeon" id="acordeon7">
-          <div class="seccion-titulos">
-            <h1>Practiquémos</h1>
-            <hr />
-          </div>
-          <div class="acordeon-item">
-            <div class="acordeon-item-header">
-              <div class="contenido-header">
-                <h3>Infografía & Quiz</h3>
-                <p>
-                  Aprende con la infografía sobre los días de la semana y
-                  realiza el Quiz y retarte. Buena suerte
-                </p>
-              </div>
-            </div>
-            <div class="acordeon-item-body">
-              <div class="acordeon-item-body-content">
-                <p>
-                  Diviértete aprendiendo. Vamos a jugar con Wordwall completando
-                  el anagramas
-                </p>
-                <iframe
-                  style="max-width: 100%"
-                  src="https://wordwall.net/es/embed/32d9d8efc0354ac9badc112779ff5ac0?themeId=41&templateId=38&fontStackId=0"
-                  width="400"
-                  height="280"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-
-          <div class="acordeon-item">
-            <div class="acordeon-item-header">
-              <div class="contenido-header">
-                <h3>Material PDF de Saludos</h3>
-                <p>
-                  Mira el material PDF y descargarlo para que puedas practicar.
-                </p>
-              </div>
-            </div>
-            <div class="acordeon-item-body">
-              <div class="acordeon-item-body-content">
-                <p>
-                  Aquí tienes un documento PDF, para que lo descargues y puedas
-                  practicar. Buena suerte 😊💚
-                </p>
-                <a
-                  href="/documents/PDF-los-saludos.pdf"
-                  download="PDF-los-saludos.pdf"
-                  >Descargalo aquí 🍩</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="acordeon-item">
-            <div class="acordeon-item-header">
-              <div class="contenido-header">
-                <h3>Juguemos con Kahoot</h3>
-                <p>
-                  Vamos a jugar para practicar el tema que hemos aprendido.
-                  ¡Juguemos con Kahoot!
-                </p>
-              </div>
-            </div>
-            <div class="acordeon-item-body">
-              <div class="acordeon-item-body-content">
-                <p>
-                  Aquí tienes un documento PDF, para que lo descargues y puedas
-                  practicar. Buena suerte 😊💚
-                </p>
-                <a
-                  href="/documents/PDF-los-saludos.pdf"
-                  download="PDF-los-saludos.pdf"
-                  >Descargalo aquí 🍩</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="boton-down">
-            <a href="#paises-A1">👇 </a>
-          </div>
-        </div>
-
-        <hr />
-
-        <!--******** LOS PAISES ************** 
-        **************************************
-        **************************************
-        ************************************** -->
-
-        <!-- Presentación de los países--------------
-        --------------------------------------------->
-        <div class="presentacion-general2" id="paises-A1">
-          <div id="myCarousel7" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/26. Los países.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/27. Los países.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/28. Los países.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/29. Los países.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/30. Los países.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/31. Los países.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/32. Los países.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="/img/Nivel-A1/presentaciones-canva/Pres final.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#myCarousel7"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#myCarousel7"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          <div class="caption-presentacion">
-            <p>
-              Ubica el cursor en los lados laterales de la presentación. Te va a
-              aprecer una mano 👆, dale clic y pasa la presentación.
-            </p>
-          </div>
-          <div class="boton-down">
-            <a href="#videos-explicacion8">Videos sobre los países 👇</a>
-          </div>
-        </div>
-
-        <!------ Videos de los continentes------------
-        ---------------------------------------------->
-        <div class="videos-explicaciones" id="videos-explicacion8">
-          <div class="seccion-titulos">
-            <h1 class="tit-vid">Explicación & Ejercicios</h1>
-            <hr class="tit-vid" />
-          </div>
-          <div class="seccion-videos">
-            <div class="videos">
-              <a href="">
-                <img src="/img/Nivel-A1/Img- NoDisponible.jpg" alt="" />
-                <h3>Explicación</h3>
-                <p>
-                  Una explicación sobre los países en español. Aprenderemos su
-                  pronunciación y cómo se escriben
-                </p>
-              </a>
-            </div>
-            <div class="videos">
-              <a href="">
-                <img src="/img/Nivel-A1/Img- NoDisponible.jpg" alt="" />
-                <h3>Ejercicios</h3>
-                <p>
-                  Una explicación sobre los países en español. Aprenderemos su
-                  pronunciación y cómo se escriben.
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="boton-down">
-            <a href="#acordeon8">Practiquémos los países 👇 </a>
-          </div>
-        </div>
-
-        <!-- Acordeon de los continentes----------
-        ------------------------------------------>
-        <div class="acordeon" id="acordeon8">
-          <div class="seccion-titulos">
-            <h1>Practiquémos</h1>
-            <hr />
-          </div>
-          <div class="acordeon-item">
-            <div class="acordeon-item-header">
-              <div class="contenido-header">
-                <h3>Infografía & Quiz</h3>
-                <p>
-                  Aprende con la infografía sobre los días de la semana y
-                  realiza el Quiz y retarte. Buena suerte
-                </p>
-              </div>
-            </div>
-            <div class="acordeon-item-body">
-              <div class="acordeon-item-body-content">
-                <p>
-                  Diviértete aprendiendo. Vamos a jugar con Wordwall completando
-                  el anagramas
-                </p>
-                <iframe
-                  style="max-width: 100%"
-                  src="https://wordwall.net/es/embed/32d9d8efc0354ac9badc112779ff5ac0?themeId=41&templateId=38&fontStackId=0"
-                  width="400"
-                  height="280"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
-          </div>
-
-          <div class="acordeon-item">
-            <div class="acordeon-item-header">
-              <div class="contenido-header">
-                <h3>Material PDF de Saludos</h3>
-                <p>
-                  Mira el material PDF y descargarlo para que puedas practicar.
-                </p>
-              </div>
-            </div>
-            <div class="acordeon-item-body">
-              <div class="acordeon-item-body-content">
-                <p>
-                  Aquí tienes un documento PDF, para que lo descargues y puedas
-                  practicar. Buena suerte 😊💚
-                </p>
-                <a
-                  href="/documents/PDF-los-saludos.pdf"
-                  download="PDF-los-saludos.pdf"
-                  >Descargalo aquí 🍩</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="acordeon-item">
-            <div class="acordeon-item-header">
-              <div class="contenido-header">
-                <h3>Juguemos con Kahoot</h3>
-                <p>
-                  Vamos a jugar para practicar el tema que hemos aprendido.
-                  ¡Juguemos con Kahoot!
-                </p>
-              </div>
-            </div>
-            <div class="acordeon-item-body">
-              <div class="acordeon-item-body-content">
-                <p>
-                  Aquí tienes un documento PDF, para que lo descargues y puedas
-                  practicar. Buena suerte 😊💚
-                </p>
-                <a
-                  href="/documents/PDF-los-saludos.pdf"
-                  download="PDF-los-saludos.pdf"
-                  >Descargalo aquí 🍩</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="boton-down">
-            <a href="#dias-semana-A1">👇 </a>
-          </div>
-        </div>
-
-        <hr />
-
-        <!--============================================================
-      ================================================================-->
-
-        <footer>
-          <div class="pie-pagina">
-            <p class="descripcion-piepagina">Created by Marguz</p>
-          </div>
-        </footer>
       </div>
+      <!--Aquí termina el contenedor -->
     </div>
 
     <!--===============================================================-->
