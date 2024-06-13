@@ -3,6 +3,19 @@
   margin: none;
 }
 
+:root {
+  --letra-titulo: "Lexend", sans-serif;
+  --letra-normal: "Livvic", sans-serif;
+  --primary-color: #db1f37;
+  --second-color: #e7fdfe;
+  --third-color: #fec3c3;
+  --cuarto-color: #474747;
+  --color-letra1: #ffff;
+  --color-letra2: #474747;
+  --border-radius: 10px;
+  --borde: 2px solid red;
+}
+
 /*------NAVBAR ------------
 ---------------------------*/
 .logomarguz {
@@ -25,7 +38,7 @@
 }
 
 .navbar-nav a {
-  color: #db1f37;
+  color: var(--primary-color);
   font-weight: 500;
 }
 
@@ -34,7 +47,7 @@
 .contenedor-hero {
   display: flex;
   justify-content: center;
-  margin: 30px 20px 0px 20px;
+  margin: 60px 20px 90px 20px;
 }
 
 .columna1 {
@@ -66,19 +79,19 @@
 }
 
 .btn-aprendizaje {
-  font-family: "Lexend", sans-serif;
+  font-family: var(--letra-titulo);
   color: white;
   padding: 10px 30px;
   margin-top: 40px;
   border: none;
   border-radius: 6px;
-  background: #db1f27;
+  background: var(--primary-color);
   transition: all 0.1s ease-in;
 }
 
 .btn-aprendizaje:hover {
   transition: all 0.1s ease-in;
-  background: #2c2c2c;
+  background: var(--cuarto-color);
   box-shadow: 2px 2px 3px rgb(95, 95, 95);
 }
 
@@ -86,112 +99,90 @@
   display: none;
 }
 
-/*----CONTENEDOR NIVELES -----
+/*----CONTENEDOR TEMAS -----
 ------------------------------*/
-
-.contenedor-niveles {
-  display: block;
+.contenedorCategorias {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 100px 0px 0px 0px;
+  padding: 20px 0px;
 }
 
-.titulo-niveles h1 {
-  color: #474747;
+.titulo-aprendizaje h1 {
+  font-family: var(--letra-titulo);
+  font-weight: 600;
+  color: var(--color-letra2);
   font-size: 50px;
-  font-weight: 700;
 }
 
-.niveles {
+.categorias {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 33% 33% 33%;
+  column-gap: 25px;
   justify-content: center;
   text-align: center;
-  margin: 30px 80px 0px 80px;
+  padding: 20px 170px 0px 170px;
 }
 
-.a1 {
-  font-family: "Lexend", sans-serif;
-  background: linear-gradient(
-    93deg,
-    #db1f27 32.22%,
-    rgba(219, 31, 41, 0.521) 101.83%
-  );
-  margin: 10px 30px;
-  padding: 30px;
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 20px;
-  transition: all 0.1s ease-in;
+.categoria {
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
 }
 
-.a1:hover {
-  background: #2c2c2c;
-  box-shadow: 4px 4px 4px gray;
-  transition: all 0.1s ease-in;
-  transform: translateY(-5px);
+.imagen-categoria img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
 }
 
-/*------ MODAL --------------------
------------------------------------*/
-#modal1,
-#modal2,
-#modal3,
-#modal4,
-#modal5 {
-  background: none;
+.titulo-categoria {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin-top: 50px;
-  border: none;
-  border-radius: none;
-  overflow: hidden;
+  padding: 20px 0px;
 }
 
-#modal1::backdrop,
-#modal2::backdrop,
-#modal3::backdrop,
-#modal4::backdrop,
-#modal5::backdrop {
-  background: rgba(0, 0, 0, 0.801);
+.titulo-categoria h3 {
+  font-family: var(--letra-titulo);
+  font-weight: 600;
+  color: var(--color-letra2);
+  font-size: 26px;
 }
 
-.boton-close {
-  text-align: end;
-  border: none;
+/*.btn-categoria {
+  background: var(--primary-color);
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 0px;
+}*/
+
+.btn-categoria a {
+  background: var(--primary-color);
+  text-decoration: none;
+  color: var(--color-letra1);
+  padding: 10px 80px;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
-.boton-close button {
-  position: absolute;
-  top: 30px;
-  right: 100px;
-  background: black;
-  color: #d9d9d9;
-  font-weight: bold;
-  outline-style: none;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 0px 10px 0px 10px;
-}
-
-.imagen-modal img {
-  width: 90%;
-  border-radius: 10px 10px;
+.btn-categoria a:hover {
+  color: var(--color-letra2);
+  background: var(--third-color);
 }
 
 /*------ FOOTER --------------------
 -----------------------------------*/
 .pie-pagina {
-  background: #474747;
+  background: var(--cuarto-color);
   border: none;
   height: 50px;
   margin-top: 60px;
 }
 
 .descripcion-piepagina {
-  font-family: "Lexend", sans-serif;
-  color: white;
+  font-family: var(--letra-titulo);
+  color: var(--color-letra1);
   font-size: 18px;
   padding-top: 10px;
   margin-right: 30px;
@@ -211,6 +202,7 @@
   /*----HERO 500 -----*/
   .contenedor500 {
     display: block;
+    margin-bottom: 70px;
   }
 
   .titulo500 h1 {
@@ -241,41 +233,52 @@
   }
 
   .btn-aprendizaje500 button {
-    font-family: "Lexend", sans-serif;
-    background: #db1f27;
+    font-family: var(--letra-titulo);
+    background: var(--primary-color);
     padding: 5px 20px;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: var(--color-letra1);
     transition: all 0.1s ease-in;
     font-size: 14px;
   }
 
   .btn-aprendizaje500 button:hover {
     transition: all 0.1s ease-in;
-    background: #2c2c2c;
+    background: var(--cuarto-color);
     box-shadow: 2px 2px 3px rgb(95, 95, 95);
   }
-  /*----NIVELES 500 -----*/
-  .titulo-niveles h1 {
-    font-size: 30px;
-    font-weight: 700;
-  }
-  .niveles {
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: center;
-    text-align: center;
-    margin: 30px 10px 0px 10px;
+  /*----TEMAS -----*/
+  .titulo-aprendizaje h1 {
+    font-size: 35px;
   }
 
-  .a1 {
-    font-family: "Lexend", sans-serif;
-    margin: 5px 50px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: 400;
-    border-radius: 10px;
+  .categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 60px 0px 60px;
+  }
+
+  .categoria {
+    margin-bottom: 25px;
+  }
+
+  .imagen-categoria img {
+    display: none;
+  }
+
+  .titulo-categoria {
+    padding: 10px 0px;
+  }
+
+  .titulo-categoria h3 {
+    font-size: 22px;
+  }
+
+  .btn-categoria a {
+    padding: 6px 80px;
   }
 
   /*----FOOTER 500 -----*/
@@ -297,6 +300,7 @@
   /*----HERO 500 -----*/
   .contenedor500 {
     display: block;
+    margin-bottom: 100px;
   }
 
   .titulo500 h1 {
@@ -327,42 +331,45 @@
   }
 
   .btn-aprendizaje500 button {
-    font-family: "Lexend", sans-serif;
-    background: #db1f27;
+    font-family: var(--letra-titulo);
+    background: var(--primary-color);
     padding: 5px 20px;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: var(--color-letra1);
   }
 
-  /*----NIVELES 500 -----*/
-  .titulo-niveles h1 {
+  /*----TEMAS -----*/
+  .titulo-aprendizaje h1 {
     font-size: 40px;
   }
 
-  .niveles {
-    margin: 30px 0px 0px 0px;
+  .categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 130px 0px 130px;
   }
 
-  .a1 {
-    font-family: "Lexend", sans-serif;
-    background: linear-gradient(
-      93deg,
-      #db1f27 32.22%,
-      rgba(219, 31, 41, 0.521) 101.83%
-    );
-    margin: 10px 30px;
-    padding: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    border-radius: 10px;
-    transition: all 0.3s ease-in;
+  .categoria {
+    margin-bottom: 25px;
+  }
+
+  .imagen-categoria img {
+    height: 120px;
+  }
+
+  .titulo-categoria {
+    padding: 10px 0px;
+  }
+
+  .titulo-categoria h3 {
+    font-size: 22px;
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 950px) {
+@media screen and (min-width: 800px) and (max-width: 1100px) {
   .titulo {
     background: linear-gradient(
       252deg,
@@ -380,28 +387,38 @@
     width: 350px;
   }
 
-  .titulo-niveles h1 {
-    font-size: 45px;
+  /*----TEMAS -----*/
+  .titulo-aprendizaje h1 {
+    font-size: 40px;
   }
 
-  .niveles {
-    margin: 30px 20px 0px 20px;
+  .categorias {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 25px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 80px 0px 80px;
   }
 
-  .a1 {
-    font-family: "Lexend", sans-serif;
-    background: linear-gradient(
-      93deg,
-      #db1f27 32.22%,
-      rgba(219, 31, 41, 0.521) 101.83%
-    );
-    margin: 10px 30px;
-    padding: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 10px;
-    transition: all 0.3s ease-in;
+  .categoria {
+    margin-bottom: 25px;
+  }
+
+  .imagen-categoria img {
+    height: 120px;
+  }
+
+  .titulo-categoria {
+    padding: 10px 0px;
+  }
+
+  .titulo-categoria h3 {
+    font-size: 22px;
+  }
+
+  .btn-categoria a {
+    padding: 10px 60px;
+    font-weight: 600;
   }
 }
