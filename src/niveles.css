@@ -48,7 +48,7 @@
   display: block;
   justify-content: center;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   padding: 20px 50px;
 }
 
@@ -65,38 +65,118 @@
 
 .contenedor-cajas {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   text-align: center;
-  column-gap: 20px;
+  column-gap: 10px;
+  row-gap: 10px;
 }
-.box-level {
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  background: linear-gradient(127.265deg, #db1f27 1%, #fec3c3 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+  background: #474747;
+  transition: all 0.5s ease;
+}
+
+.box1 a,
+.box2 a,
+.box3 a,
+.box4 a {
+  font-family: var(--letra-titulo);
+  padding: 20% 28%;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--color-letra1);
+  font-weight: 600;
+}
+
+.box5 {
+  grid-column: 1/3;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.box5 img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.box5 img:hover {
+  box-shadow: 2px 2px 3px gray;
+  transform: scale(1.02);
+}
+
+.box6 {
+  grid-column: 3/5;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.box6 img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.box6 img:hover {
+  box-shadow: 2px 2px 3px gray;
+  transform: scale(1.02);
+}
+
+/* .box-level1,
+.box-level2,
+.box-level3,
+.box-level4,
+.box-level5 {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.box-level a {
+
+.box-level1 {
+  grid-column: 2/3;
+}
+
+.box-level1 a,
+.box-level2 a,
+.box-level3 a,
+.box-level4 a,
+.box-level5 a {
   text-decoration: none;
   border-radius: 10px;
 }
 
-.box-level h1 {
+.box-level1 h1,
+.box-level2 h1,
+.box-level3 h1,
+.box-level4 h1,
+.box-level5 h1 {
   background: linear-gradient(127.265deg, #db1f27 1%, #fec3c3 100%);
   font-family: var(--letra-titulo);
   color: var(--color-letra1);
   font-weight: 600;
+  font-size: 40px;
   display: block;
-  padding: 70px;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.438);
 }
 
 .box-level h1:hover {
   background: var(--cuarto-color);
-}
-
-.box-level h2 {
-  font-family: var(--letra-titulo);
-  color: #f0f0f0;
-  font-weight: 600;
-}
+} */

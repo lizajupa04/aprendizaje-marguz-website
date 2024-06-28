@@ -171,6 +171,161 @@
   background: var(--third-color);
 }
 
+/*----CLASES -----------------
+------------------------------*/
+.contenedor-clases {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.subcontenedor-clases {
+  display: flex;
+}
+
+.titulo-clases {
+  background: rgb(37, 37, 37);
+}
+
+.titulo-clases h1 {
+  font-family: var(--letra-titulo);
+  font-weight: 600;
+  text-align: start;
+  color: var(--color-letra1);
+  font-size: 50px;
+  padding: 30px 0px 0px 70px;
+}
+
+.titulo-clases hr {
+  background: rgb(253, 84, 84);
+  height: 5px;
+  width: 400px;
+  border-radius: 20px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+
+.seccion-1 {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.seccion-1:hover {
+  border: 2px solid white;
+  transition: all 0.3s ease;
+  transform: translateY(-5px);
+}
+
+.seccion-1 img {
+  width: 100%;
+}
+
+.seccion-1 span {
+  position: absolute;
+  left: 0px;
+  padding: 20px 20px;
+}
+
+.seccion-1 h3 {
+  font-family: var(--letra-titulo);
+  text-decoration: none;
+  color: var(--color-letra1);
+  font-weight: 600;
+  font-size: 34px;
+  padding: 20px 0px;
+}
+
+.seccion-1 p {
+  font-family: var(--letra-normal);
+  text-decoration: none;
+  color: var(--color-letra1);
+  font-weight: none;
+  font-size: 16px;
+  padding: 0px 20px;
+}
+
+.seccion-1 h4 {
+  font-family: var(--letra-titulo);
+  text-decoration: none;
+  color: var(--color-letra1);
+}
+
+/*------ REVIEW --------------------
+-----------------------------------*/
+
+/* -- Contenedor principal --*/
+.contenedor-reviews {
+  border: var(--borde);
+  margin-top: 80px;
+  padding: 20px;
+}
+
+/* -- Contenedor titulos --*/
+.titulo-reviews {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo-reviews h1 {
+  font-family: var(--letra-titulo);
+  color: var(--color-letra2);
+  font-size: 50px;
+  padding: 20px;
+}
+
+/* -- Contenedor secundario --*/
+.subcontenedor-reviews {
+  display: flex;
+  overflow: hidden;
+  padding: 20px 100px;
+}
+
+.caja-review {
+  min-width: 400px;
+  min-height: 100px;
+  margin: 0px 20px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: var(--borde);
+}
+
+.icons-start {
+  padding: 10px 0px;
+}
+
+.descripcion-review p {
+  min-height: 70px;
+  font-family: var(--letra-normal);
+  font-size: 14px;
+}
+
+.usuario-texto {
+  display: flex;
+}
+
+.usuario-texto img {
+  width: 50px;
+  height: 50px;
+}
+
+.usuario-texto span {
+  padding: 5px 0px 0px 10px;
+  line-height: 5px;
+}
+
+.usuario-texto span h3 {
+  font-family: var(--letra-titulo);
+  font-size: 16px;
+}
+
+.usuario-texto span p {
+  font-family: var(--letra-titulo);
+  font-size: 12px;
+}
+
 /*------ FOOTER --------------------
 -----------------------------------*/
 .pie-pagina {

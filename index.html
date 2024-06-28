@@ -19,6 +19,19 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/f4c9f02e2b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!--==============NAVBAR================
@@ -26,7 +39,10 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
-          ><img class="logomarguz" src="/img/Logo-marguz.png" alt="Logo Marguz"
+          ><img
+            class="logomarguz"
+            src="/img/Homepage/Logo-marguz.png"
+            alt="Logo Marguz"
         /></a>
         <button
           class="navbar-toggler"
@@ -46,6 +62,7 @@
           <div class="navbar-nav">
             <a class="nav-link" aria-current="page" href="#">Inicio</a>
             <a class="nav-link" href="#titulo-categorias">Aprendizaje</a>
+            <a class="nav-link" href="#seccion-clases">Clases</a>
             <a class="nav-link" href="#">Contacto</a>
           </div>
         </div>
@@ -63,7 +80,7 @@
         </a>
       </div>
       <div class="columna2">
-        <img class="imagen-hero" src="/img/Group 14.png" alt="" />
+        <img class="imagen-hero" src="/img/Homepage/Img-hero.png" alt="" />
       </div>
     </div>
 
@@ -84,7 +101,7 @@
     <!--=========NIVELES ESPAÑOL============
         ====================================-->
 
-    <dialog id="modal4">
+    <!-- <dialog id="modal4">
       <div class="boton-close">
         <button id="btn-cerrar-modal4">Close</button>
       </div>
@@ -100,9 +117,10 @@
       <div class="imagen-modal">
         <img src="/img/Modal1.png" alt="" />
       </div>
-    </dialog>
+    </dialog> -->
 
-    <!--NUEVA SECCION-->
+    <!--=========CATEGORIAS=================
+        ====================================-->
     <div class="contenedorCategorias">
       <div class="titulo-aprendizaje">
         <h1 id="titulo-categorias">Nuestro Aprendizaje</h1>
@@ -110,7 +128,7 @@
       <div class="categorias">
         <div class="categoria">
           <div class="imagen-categoria">
-            <img src="/img/categoria-niveles.png" alt="" />
+            <img src="/img/Homepage/categoria-niveles.png" alt="" />
           </div>
           <div class="titulo-categoria">
             <h3>Niveles</h3>
@@ -121,7 +139,7 @@
         </div>
         <div class="categoria">
           <div class="imagen-categoria">
-            <img src="/img/categoria-historias.png" alt="" />
+            <img src="/img/Homepage/categoria-historias.png" alt="" />
           </div>
           <div class="titulo-categoria">
             <h3>Pequeñas historias</h3>
@@ -132,13 +150,154 @@
         </div>
         <div class="categoria">
           <div class="imagen-categoria">
-            <img src="/img/categoria-diferentes.png" alt="" />
+            <img src="/img/Homepage/categoria-diferentes.png" alt="" />
           </div>
           <div class="titulo-categoria">
             <h3>Diferentes temas</h3>
           </div>
           <div class="btn-categoria">
             <a href="">Click aquí</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--=========CLASES=================
+        ====================================-->
+    <div class="contenedor-clases">
+      <div class="titulo-clases" id="seccion-clases">
+        <h1>Disfruta de nuestras clases</h1>
+        <hr />
+      </div>
+
+      <!-- -->
+      <div class="subcontenedor-clases">
+        <div class="seccion-1">
+          <a href="/formulario-1.html">
+            <img src="/img/Homepage/Sesiones-grupales.png" alt="" />
+            <span>
+              <h3>
+                Sesiones <br />
+                Grupales
+              </h3>
+              <p>
+                epsum Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Non beatae voluptatum tempore natus obcaecati ratione dolorum
+                deleniti alias, neque qui magni consequuntur cum adipisci
+                perferendis quo accusamus est tempora reprehenderit!
+              </p>
+              <h4>Click Aquí</h4>
+            </span>
+          </a>
+        </div>
+        <div class="seccion-1">
+          <a href="">
+            <img src="/img/Homepage/Sesiones-conversa.png" alt="" />
+            <span>
+              <h3>Sesiones Conversacionales</h3>
+              <p>
+                epsum Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Non beatae voluptatum tempore natus obcaecati ratione dolorum
+                deleniti alias, neque qui magni consequuntur cum adipisci
+                perferendis quo accusamus est tempora reprehenderit!
+              </p>
+              <h4>Click Aquí</h4>
+            </span>
+          </a>
+        </div>
+        <div class="seccion-1">
+          <a href="">
+            <img src="/img/Homepage/Sesiones-personali.png" alt="" />
+            <span>
+              <h3>Sesiones Personalizadas</h3>
+              <p>
+                epsum Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Non beatae voluptatum tempore natus obcaecati ratione dolorum
+                deleniti alias, neque qui magni consequuntur cum adipisci
+                perferendis quo accusamus est tempora reprehenderit!
+              </p>
+              <h4>Click Aquí</h4>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--=========REVIEWS====================
+        ====================================-->
+
+    <div class="contenedor-reviews">
+      <!--  -->
+      <div class="titulo-reviews">
+        <h1>Qué dice nuestra comunidad</h1>
+      </div>
+      <!--  -->
+      <div class="subcontenedor-reviews">
+        <div class="caja-review">
+          <div class="icons-start">
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+          </div>
+          <div class="descripcion-review">
+            <p>
+              Me siento muy contento con esta página <br />
+              Me siento muy contento con esta página
+            </p>
+          </div>
+          <div class="usuario-texto">
+            <img src="/img/Homepage/Mask group.png" alt="" />
+            <span>
+              <h3>David</h3>
+              <p>Francia</p>
+            </span>
+          </div>
+        </div>
+        <!--  -->
+        <div class="caja-review">
+          <div class="icons-start">
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+          </div>
+          <div class="descripcion-review">
+            <p>
+              epsum Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Fuga minima ea harum natus quo
+            </p>
+          </div>
+          <div class="usuario-texto">
+            <img src="/img/Homepage/Mask group.png" alt="" />
+            <span>
+              <h3>Pedro</h3>
+              <p>Colombia</p>
+            </span>
+          </div>
+        </div>
+        <!--  -->
+        <div class="caja-review">
+          <div class="icons-start">
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+          </div>
+          <div class="descripcion-review">
+            <p>
+              Me siento muy contento con esta página <br />
+              Me siento muy contento con esta página
+            </p>
+          </div>
+          <div class="usuario-texto">
+            <img src="/img/Homepage/Mask group.png" alt="" />
+            <span>
+              <h3>David</h3>
+              <p>Francia</p>
+            </span>
           </div>
         </div>
       </div>
