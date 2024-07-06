@@ -41,3 +41,121 @@
   color: var(--primary-color);
   font-weight: 500;
 }
+
+/*------SECCION PRINCIPAL ------------
+--------------------------------------*/
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-content: center;
+  text-align: center;
+}
+
+/*------ Columna 1 -------------------*/
+.columna1 {
+  background-image: url("/img/fondo-formulario.png");
+  padding: 30px 30px;
+}
+
+.columna1 h1 {
+  font-family: var(--letra-titulo);
+  color: var(--color-letra1);
+  text-align: start;
+  padding: 30px 20px 0px 20px;
+}
+
+.columna1 h3 {
+  font-family: var(--letra-titulo);
+  color: var(--color-letra1);
+  text-align: end;
+}
+
+.columna1 p {
+  font-family: var(--letra-normal);
+  color: var(--color-letra1);
+  text-align: center;
+  font-weight: 300;
+  padding: 30px 30px;
+  font-size: 16px;
+}
+
+.columna1 a {
+  margin: 0px 15px;
+  text-decoration: none;
+}
+
+/*------ Columna 2 -------------------*/
+
+.columna2 {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 160px;
+}
+
+.columna2 h2 {
+  font-family: var(--letra-titulo);
+  text-align: start;
+  padding: 10px 0px 0px 0px;
+  color: var(--color-letra2);
+}
+
+.seccion-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+}
+
+.seccion-form label {
+  font-family: var(--letra-titulo);
+  text-align: start;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0px;
+  color: var(--color-letra2);
+}
+
+.name,
+.email {
+  border: 1px solid #474747;
+  border-radius: 5px;
+  height: 35px;
+  padding: 5px 10px;
+  outline-color: var(--primary-color);
+  font-family: var(--letra-titulo);
+  color: var(--color-letra2);
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-style: italic;
+  justify-content: center;
+}
+
+.seccion-form textarea {
+  font-family: var(--letra-titulo);
+  color: var(--color-letra2);
+  font-size: 14px;
+  padding: 10px 10px;
+  outline-color: var(--primary-color);
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid #474747;
+}
+
+.enviar {
+  font-family: var(--letra-titulo);
+  background: var(--primary-color);
+  color: var(--color-letra1);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 30px;
+  text-align: center;
+}
+
+.enviar:hover {
+  background: var(--cuarto-color);
+  box-shadow: 2px 2px 3px rgba(117, 117, 117, 0.842);
+}

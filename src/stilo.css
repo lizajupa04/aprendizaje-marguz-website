@@ -95,6 +95,15 @@
   box-shadow: 2px 2px 3px rgb(95, 95, 95);
 }
 
+.icons-redes {
+  margin-top: 20px;
+}
+
+.icons-redes a {
+  margin: 0px 15px;
+  text-decoration: none;
+}
+
 .contenedor500 {
   display: none;
 }

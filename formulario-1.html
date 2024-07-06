@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="#" />
 
-    <link href="/src/stilo.css" rel="stylesheet" type="text/css" />
+    <link href="/src/formulario-1.css" rel="stylesheet" type="text/css" />
 
     <!-- BOOSTRAP -->
     <link
@@ -72,5 +72,72 @@
         </div>
       </div>
     </nav>
+
+    <!--==============SECCION================
+        ====================================-->
+    <div class="contenedor-principal">
+      <div class="columna1">
+        <h1>REGISTRO</h1>
+        <h3>Sesiones Grupales</h3>
+        <p>
+          Descubre nuestras sesiones grupales gratuitas en español, diseñadas
+          para mejorar la confianza en tu español.
+          <strong>Incríbete aquí.</strong>
+        </p>
+        <span>
+          <a href="">
+            <i class="fa-brands fa-youtube fa-xl" style="color: #ffffff"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-discord fa-xl" style="color: #ffffff"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-telegram fa-xl" style="color: #ffffff"></i>
+          </a>
+        </span>
+      </div>
+      <div class="columna2">
+        <h2>Llena el formulario</h2>
+        <form action="">
+          <div class="seccion-form">
+            <label for="">Nombre Completo</label>
+            <input
+              type="text"
+              class="name"
+              name="nombre"
+              placeholder="Escribe tu nombre completo"
+              id=""
+              maxlength="40"
+              required
+            />
+          </div>
+          <div class="seccion-form">
+            <label for="">Correo Electrónico</label>
+            <input
+              type="email"
+              name="correo"
+              placeholder="Escribe tu correo electrónico"
+              id=""
+              class="email"
+              maxlength="40"
+              required
+            />
+          </div>
+          <div class="seccion-form">
+            <label for="">Cual es tu objetivo</label>
+            <textarea
+              name=""
+              id=""
+              placeholder="Escribe algo"
+              maxlength="200"
+            ></textarea>
+          </div>
+          <input type="submit" value="Enviar" class="enviar" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
